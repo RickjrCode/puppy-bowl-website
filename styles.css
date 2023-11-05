@@ -1,0 +1,142 @@
+body {
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  margin: 0;
+  box-sizing: border-box;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(puppy-bowl-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.page-title {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  font-size: 60px;
+  align-items: center;
+  font-family: "Anton", sans-serif;
+}
+
+#new-player-form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5ff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#new-player-form h2 {
+  text-align: center;
+  color: #0f172a;
+}
+
+#new-player-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #666;
+}
+
+#new-player-form input[type="text"],
+#new-player-form input[type="number"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#new-player-form button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#new-player-form button[type="submit"]:hover {
+  background-color: #666;
+}
+
+.container {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.player-card {
+  background-color: aliceblue;
+  border-radius: 15px;
+  width: 250px;
+  height: 100%;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #333;
+  text-align: center;
+}
+
+.player-card:hover {
+  background-color: #333;
+  color: white;
+  transform: scale(1.07);
+  transition: all 0.94s ease;
+}
+
+.player-image {
+  border: 3px solid #000;
+  border-radius: 10px;
+  max-width: 95%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 5px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.details-button {
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: monospace;
+  padding: 8px 14px;
+  cursor: pointer;
+  border: 2px solid #0f172a;
+  box-shadow: 2px 2px 0 0 white, 4px 4px 0 0 #0f172a;
+  transition-duration: 200ms;
+}
+
+.remove-button {
+  background-color: firebrick;
+  font-weight: bold;
+  font-family: monospace;
+  border-radius: 10px;
+  padding: 8px 14px;
+  cursor: pointer;
+  border: 2px solid #0f172a;
+  box-shadow: 2px 2px 0 0 white, 4px 4px 0 0 #0f172a;
+  transition-duration: 200ms;
+}
+
+.details-button:hover,
+.remove-button:hover {
+  box-shadow: 3px 3px white, 6px 6px 0 0 #0f172a;
+  transform: translate(-2px, -2px);
+}
